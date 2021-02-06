@@ -1,0 +1,134 @@
+/* Write some CSS below */
+
+/* Cards media queries */
+@media (max-width: 2000px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+
+/*@media (min-width: 800px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}*/
+
+body {
+	font-family: Overpass, sans-serif;
+	color: #404042;
+	font-size: 18px;
+	/*line-height: 1.5;*/
+	text-align: justify;
+}
+
+h1, h2, h3 {
+	font-family: Chivo, sans-serif;
+}
+
+h1 {
+	color: rgba(255,255,255,1);
+	background-color: rgba(0,0,0,0.5);
+	font-size: 45px; 
+	line-height: 1.5;
+	letter-spacing: 3px;
+	font-weight: bold;
+	text-align: center;
+}
+
+a {
+	color: #1A48E3;
+	font-weight: bold;
+	text-decoration: none; /*remove the line under the link*/	
+	transition: .3s;
+}
+
+a:hover {
+	color: #CE2FAE;
+}
+
+
+.banner{
+	/*position: relative;*/
+	text-align: center;
+	background-image: url("images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 60px 0px;
+}
+.banner a {
+	/*position: fixed;*/
+	/*bottom: 375px;*/
+	padding: 10px 30px;
+	background-color: rgba(255, 255, 0,0.9);
+	border-radius: 3px;
+	display: inline-block;
+	margin-top: 20px;
+}
+.banner p {
+	color: rgba(255, 255, 255,0.8);
+}
+
+
+.container	{
+	margin: 30px auto; 
+	padding: 10px 10px;  /*top-bottom, left-right*/
+	border: 1px solid grey;
+	border-radius: 3px; /*border-radius: 50%;can make a perfext circle */
+	box-shadow: 10px 10px 10px grey; /*horizontal shift, vertical shift, expand, color*/
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card-white{ /*to be more specific */
+	margin: 10px auto; 
+	border: 1px solid grey;
+	border-radius: 3px;
+	text-align: center; 
+	font-size: 16px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+.img-circle{
+	width: 80%;
+	padding: 10px 10px;
+	border-radius: 5px; 
+}
+
+.footer {
+  background: #404042;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.footer p {
+  color: white;
+}
+
+ul{
+	list-style: none;
+}
+
+
+
